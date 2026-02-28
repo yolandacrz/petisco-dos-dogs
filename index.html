@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petiscos do Dog | Loja Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">USE O CUPOM NATURAL10 E GANHE 10% DE DESCONTO</div>
+
+    <header>
+        <div class="logo"> Petiscos do Dog</div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cart-status">🛒 <span id="cart-total-header">R$ 0,00</span></div>
+    </header>
+
+    <main class="container">
+        <section class="products-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600&auto=format&fit=crop" alt="Biscoito para cachorro">
+                <h3>Biscoito Natural</h3>
+                <p>Saudável e livre de conservantes.</p>
+                <span class="price">R$ 15,00</span>
+                <button class="btn-buy" onclick="adicionarAoCarrinho(15)">Comprar</button>
+            </div>
+
+            <div class="card">
+               
+<img src="https://vetex.vet.br/blog/wp-content/uploads/2021/11/osso-para-cachorro-VETEX-930x620.png" alt="Osso mastigável para cachorro">
+                <h3>Osso Mastigável</h3>
+                <p>Ajuda na saúde bucal do pet.</p>
+                <span class="price">R$ 25,00</span>
+                <button class="btn-buy" onclick="adicionarAoCarrinho(25)">Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.tcdn.com.br/img/img_prod/1157897/peito_de_frango_petisco_desidratado_natural_para_cachorro_e_gato_27_1_31b0158d81b58021c17ae6e35e1db298.png" alt="Petisco de frango">
+                <h3>Petisco de Frango</h3>
+                <p>Proteína animal de verdade.</p>
+                <span class="price">R$ 20,00</span>
+                <button class="btn-buy" onclick="adicionarAoCarrinho(20)">Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cart-footer">
+        <h2>🛒 Seu Carrinho</h2>
+        <p>Total acumulado: <strong id="cart-total-footer">R$ 0,00</strong></p>
+        <button class="btn-checkout" onclick="limparCarrinho()">Limpar Carrinho</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
