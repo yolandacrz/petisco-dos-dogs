@@ -1,0 +1,149 @@
+:root {
+    --primaria: #8dbd35;
+    --detalhe: #d1b894;
+    --fundo: #fdfdfd;
+    --texto: #2d2d2d;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* Faixa de Cupom */
+.top-bar {
+    background-color: var(--detalhe);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+/* Header fixo */
+header {
+    background: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primaria);
+}
+
+/* Grid de Produtos */
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Cards Estilo E-commerce */
+.card {
+    background: var(--branco);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.4s;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    display: block;
+    font-size: 22px;
+    color: var(--primaria);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.btn-buy {
+    background: var(--primaria);
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: #769e2c;
+    box-shadow: 0 5px 15px rgba(141, 189, 53, 0.4);
+}
+
+/* Rodapé do Carrinho */
+.cart-footer {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.btn-checkout {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
